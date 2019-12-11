@@ -1,4 +1,5 @@
-﻿using System;
+﻿using META.Views;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -9,8 +10,9 @@ namespace META
         public App()
         {
             InitializeComponent();
-
-            MainPage = new MainPage();
+            //set your login page as first page
+            //set HomePage as new MainPage
+            MainPage = new NavigationPage(new LogInPage());
         }
 
         protected override void OnStart()
