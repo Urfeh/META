@@ -7,7 +7,7 @@ using Xamarin.Forms;
 
 namespace META.ViewModels
 {
-    public class SignUpVM : INotifyPropertyChanged
+    public class SignUpViewModel : INotifyPropertyChanged
     {
         private string email;
         public string Email

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using META.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,9 +13,14 @@ namespace META.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class SignUpPage : ContentPage
     {
+        SignUpViewModel signUpViewModel;
+
         public SignUpPage()
         {
             InitializeComponent();
+            signUpViewModel = new SignUpViewModel();
+            //set binding    
+            BindingContext = signUpViewModel;
         }
     }
 }
